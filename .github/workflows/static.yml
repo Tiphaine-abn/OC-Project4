@@ -41,7 +41,7 @@ jobs:
           destination: |
             /tmp/OC-Project4/css/main.css
       - name: Move compiled CSS to path within pr-pages branch
-        run: mv /tmp/OC-Project4/css/main.css css/
+        run: mv /tmp/OC-Project4/css/*.css css/
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact

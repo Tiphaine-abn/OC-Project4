@@ -25,6 +25,9 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
 
+      - name: Make destination directory for compiled CSS
+        run: mkdir -vp /tmp/OC-Project4/css
+
       - name: Compile main.css from main.scss
         uses: gha-utilities/sass-build@v0.6.0
         with:

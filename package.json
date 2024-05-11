@@ -1,0 +1,10 @@
+{
+  "name": "oc-project4",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "sass ./sass/main.scss ./css/main.css -s compressed",
+    "watch": "sass --watch ./sass/main.scss ./css/main.css -s compressed"
+  },
+  "packageManager": "yarn@4.2.2"
+}

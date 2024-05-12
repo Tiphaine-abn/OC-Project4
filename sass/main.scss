@@ -1,3 +1,5 @@
+@use 'base';
+
 .intro {
 
     display: flex;
@@ -9,4 +11,10 @@
         align-items: center;
     }
 
+}
+
+body {
+    h1 {
+        font-family: base.$font-title;
+    }
 }

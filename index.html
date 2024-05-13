@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Accueil - Ohmyfood</title>
 </head>
 
 <body>
@@ -26,13 +27,13 @@
             </form>
         </section>
 
-        <section>
+        <section class="info">
             <h2>Réservez le menu qui vous convient</h2>
             <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
             <a href="#restaurants">Explorer nos restaurants</a>
         </section>
 
-        <section>
+        <section class="functioning">
             <h2>Fonctionnement</h2>
             <ol>
                 <li>
@@ -50,70 +51,63 @@
             </ol>
         </section>
 
-        <section id="restaurants" class="restaurant">
-            <div class="content">
-                <h2>Restaurants</h2>
-            </div>
-            <div class="cards">
-                <a class="card__menu" href="la-palette-du-gout.html">
-                    <article>
-                        <img src="images/restaurants/" alt="photo d'un plat du restaurant">
-                        <p class="card__badge">Nouveau</p>
-                        <div class="card__title">
+        <section class="restaurant" id="restaurants">
+            <h2>Restaurants</h2>
+            <div class="restaurant__cards">
+
+                <article class="card__menu">
+                    <a href="la-palette-du-gout.html">
+                        <img src="images/restaurants/" alt="Photo d'un plat du restaurant">
+                        <p class="card__menu--badge">Nouveau</p>
+                        <div class="card__menu--text">
                             <h3>La palette du goût</h3>
-                        </div>
-                        <div class="card__subtitle">
                             <p>Ménilmontant</p>
                         </div>
+                    </a>
+                    <div class="card__menu--like">
                         <button type="submit" class="button__like"><i class="far fa-heart"></i></button>
-                    </article>
-                </a>
-            </div>
+                    </div>
+                </article>
 
-            <div class="cards">
-                <a class="card__menu" href="la-note-enchantee.html">
-                    <article>
-                        <img src="images/restaurants/" alt="photo d'un plat du restaurant">
-                        <p class="card__badge">Nouveau</p>
-                        <div class="card__title">
+                <article class="card__menu">
+                    <a href="la-note-enchantee.html">
+                        <img src="images/restaurants/" alt="Photo d'un plat du restaurant">
+                        <p class="card__menu--badge">Nouveau</p>
+                        <div class="card__menu--text">
                             <h3>La note enchantée</h3>
-                        </div>
-                        <div class="card__subtitle">
                             <p>Charonne</p>
                         </div>
+                    </a>
+                    <div class="card__menu--like">
                         <button type="submit" class="button__like"><i class="far fa-heart"></i></button>
-                    </article>
-                </a>
-            </div>
+                    </div>
+                </article>
 
-            <div class="cards">
-                <a class="card__menu" href="a-la-francaise.html">
-                    <article>
-                        <img src="images/restaurants/" alt="photo d'un plat du restaurant">
-                        <div class="card__title">
+                <article class="card__menu">
+                    <a href="a-la-francaise.html">
+                        <img src="images/restaurants/" alt="Photo d'un plat du restaurant">
+                        <div class="card__menu--text">
                             <h3>À la française</h3>
-                        </div>
-                        <div class="card__subtitle">
                             <p>Cité Rouge</p>
                         </div>
+                    </a>
+                    <div class="card__menu--like">
                         <button type="submit" class="button__like"><i class="far fa-heart"></i></button>
-                    </article>
-                </a>
-            </div>
+                    </div>
+                </article>
 
-            <div class="cards">
-                <a class="card__menu" href="le-delice-des-sens.html">
-                    <article>
-                        <img src="images/restaurants/" alt="photo d'un plat du restaurant">
-                        <div class="card__title">
+                <article class="card__menu">
+                    <a href="le-delice-des-sens.html">
+                        <img src="images/restaurants/" alt="Photo d'un plat du restaurant">
+                        <div class="card__menu--text">
                             <h3>Le délice des sens</h3>
-                        </div>
-                        <div class="card__subtitle">
                             <p>Folie-Méricourt</p>
                         </div>
+                    </a>
+                    <div class="card__menu--like">
                         <button type="submit" class="button__like"><i class="far fa-heart"></i></button>
-                    </article>
-                </a>
+                    </div>
+                </article>
             </div>
         </section>
     </main>

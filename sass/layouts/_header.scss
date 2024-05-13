@@ -3,14 +3,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        font-family: 'Shrikhand';
         font-size: 30px;
     }
 
     &__location {
         display: flex;
-
-        i {}
+        justify-content: center;
+        align-items: center;
     }
 
 }

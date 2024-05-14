@@ -1,3 +1,9 @@
+/*@import 'utils/mixins';*/
+
 .btn {
-    background: linear-gradient($primary-color, $second-color);
+    padding: 15.5px 22px;
+    border-radius: 50px;
+    background-image: linear-gradient(to top, #9356DC, #FF79DA);
+    color: #F3F3F3;
+    /*@include shadow;*/
 }

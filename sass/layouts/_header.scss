@@ -1,13 +1,15 @@
+@import "../utils/mixins";
+
 .header {
     &__logo {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 63px;
-    }
+        margin: 15px;
 
-    img {
-        height: 30px;
+        img {
+            height: 30px;
+        }
     }
 
     &__location {
@@ -16,14 +18,12 @@
         align-items: center;
         background-color: #EAEAEA;
         height: 50px;
+        font-weight: bold;
+        @include shadow-location;
     }
 
     i {
         margin-right: 17px;
-    }
-
-    p {
-        font-weight: bold;
     }
 }
 
@@ -31,17 +31,13 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 40px 20px 70px;
+    padding: 20px 20px 70px;
     background-color: #F6F6F6;
-
-    h2 {
-        margin: 0px;
-
-    }
+    @include shadow-location;
 
     &__subtitle {
         font-size: 18px;
         color: #353535;
-        padding: 12px 0 30px;
+        margin-bottom: 40px;
     }
 }

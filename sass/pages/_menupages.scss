@@ -1,0 +1,76 @@
+@import "../utils/variables";
+
+.header {
+    &__arrow {
+        position: absolute;
+        color: $color-dark-grey;
+        font-size: 18px;
+        left: 25px;
+    }
+
+    &__banner {
+        width: 100%;
+        height: 275px;
+        object-fit: cover;
+    }
+}
+
+.restaurant__container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.restaurant__menu {
+    border-radius: 40px 40px 0 0;
+    background-color: #f6f6f6;
+    position: relative;
+    margin-top: -40px;
+    padding: 40px 15px;
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+
+    @media (min-width: $tablette) {
+        padding: 40px 200px;
+    }
+}
+
+.cards__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    padding: 12px 12px 12px 10px;
+    margin-bottom: 14px;
+    overflow: hidden;
+    @include shadow;
+
+    h2 {
+        margin: 0 0 4px;
+    }
+}
+
+.cards__text {
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.cards__subtitle {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.cards__price {
+    margin: 0;
+    font-weight: bold;
+    padding-left: 10px;
+}

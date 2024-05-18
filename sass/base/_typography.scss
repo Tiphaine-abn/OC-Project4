@@ -1,11 +1,51 @@
+@import "../utils/variables";
+
 $font-title: 'Shrikhand';
 
 * {
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    color: #000000;
     text-decoration: none;
 }
 
-h2 {
+h1 {
     font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 18px;
+    margin: 0px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+.restaurant__titles {
+    font-family: 'Shrikhand';
+    font-size: 28px;
+
+    @media (min-width: $tablette) {
+        text-align: center;
+    }
+}
+
+.uppercase-heading {
+    text-transform: uppercase;
+    font-weight: 300;
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+    &::after {
+        content: "";
+        width: 40px;
+        height: 3px;
+        background-color: $color-tertiary;
+        position: absolute;
+        left: 0;
+        top: 24px;
+    }
 }

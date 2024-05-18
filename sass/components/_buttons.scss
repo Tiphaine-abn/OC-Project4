@@ -1,9 +1,58 @@
-/*@import 'utils/mixins';*/
+@import "../utils/variables";
+@import "../utils/mixins";
 
 .btn {
     padding: 15.5px 22px;
+    font-size: 16px;
     border-radius: 50px;
-    background-image: linear-gradient(to top, #9356DC, #FF79DA);
     color: #F3F3F3;
-    /*@include shadow;*/
+    background-color: transparent;
+    border: transparent 0px solid;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    @include gradient;
+    @include shadow-btn;
+
+    &:hover {
+        opacity: 0.90;
+        /* Légèrement transparent */
+        @include shadow-btn-hover;
+    }
+}
+
+.btn__menu {
+    padding: 15px 48.5px;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    @include shadow-btn;
+}
+
+.btn__heart {
+    font-size: 25px;
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    align-items: center;
+
+    i {
+        position: absolute;
+    }
+}
+
+.btn__heart-solid {
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.btn__heart-solid:hover {
+    opacity: 1;
+    color: $color-primary;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    @include gradient;
 }

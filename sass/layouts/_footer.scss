@@ -1,6 +1,6 @@
 .footer {
     background-color: #353535;
-    padding: 22px 25px 22px 25px;
+    padding: 30px 25px 30px 25px;
 
     i,
     p {
@@ -23,9 +23,26 @@
     a {
         display: flex;
         align-items: center;
+        margin-bottom: 10px;
     }
 
-    a:not(:last-child) {
-        margin-bottom: 10px;
+    @media (min-width: $desktop) {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 70px 80px 30px 25px;
+
+        img {
+            padding: 0;
+            margin-left: 80px;
+        }
+
+        .footer__content {
+            display: flex;
+        }
+
+        .footer__link {
+            display: flex;
+            margin-left: 40px;
+        }
     }
 }

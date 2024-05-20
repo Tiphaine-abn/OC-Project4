@@ -8,6 +8,12 @@ $font-title: 'Shrikhand';
     text-decoration: none;
 }
 
+.info__title {
+    @media (min-width: $desktop) {
+        font-size: 40px;
+    }
+}
+
 h1 {
     font-size: 24px;
     font-weight: bold;

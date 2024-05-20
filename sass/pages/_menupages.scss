@@ -48,7 +48,9 @@
     padding: 12px 12px 12px 10px;
     margin-bottom: 14px;
     overflow: hidden;
+    position: relative;
     @include shadow;
+    width: calc(100% - 54px);
 
     h2 {
         margin: 0 0 4px;
@@ -67,6 +69,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    flex: 1;
 }
 
 .cards__price {

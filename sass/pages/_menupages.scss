@@ -15,11 +15,6 @@
     }
 }
 
-.restaurant__container {
-    max-width: 1200px;
-    margin: auto;
-}
-
 .restaurant__menu {
     border-radius: 40px 40px 0 0;
     background-color: #f6f6f6;
@@ -27,53 +22,30 @@
     margin-top: -40px;
     padding: 40px 15px;
 
-    &__content {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 30px;
-    }
-
     @media (min-width: $tablette) {
-        padding: 40px 200px;
+        padding: 50px 100px;
+    }
+
+    &--content {
+        margin-bottom: 30px;
+
+        @media (min-width: $tablette) {
+            display: flex;
+            justify-content: center;
+        }
     }
 }
 
-.cards__menu {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    background-color: #FFFFFF;
-    border-radius: 15px;
-    padding: 12px 12px 12px 10px;
-    margin-bottom: 14px;
-    overflow: hidden;
-    position: relative;
-    @include shadow;
-    width: calc(100% - 54px);
-
-    h2 {
-        margin: 0 0 4px;
+.restaurant__container {
+    @media (min-width: $tablette) {
+        max-width: 600px;
     }
-}
 
-.cards__text {
-    font-size: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
+    @media (min-width: $desktop) {
+        max-width: 850px;
+    }
 
-.cards__subtitle {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    flex: 1;
-}
-
-.cards__price {
-    margin: 0;
-    font-weight: bold;
-    padding-left: 10px;
+    @media (min-width: $large-desktop) {
+        max-width: 1200px;
+    }
 }

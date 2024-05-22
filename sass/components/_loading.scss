@@ -10,7 +10,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 10px solid $color-tertiary;
+        border: 10px solid transparent;
         border-top: 10px solid $color-primary;
         border-bottom: 10px solid $color-secondary;
         border-radius: 50%;
@@ -22,7 +22,7 @@
         animation: loader-border 2s linear;
 
         i {
-            color: $color-tertiary;
+            color: $color-dark-grey;
             font-size: 40px;
         }
     }

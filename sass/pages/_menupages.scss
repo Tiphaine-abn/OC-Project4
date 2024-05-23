@@ -38,7 +38,10 @@
     }
 
     &--content {
+        padding-right: 30px;
         margin-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
 
         @media (min-width: $tablette) {
             display: flex;

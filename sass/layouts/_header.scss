@@ -1,5 +1,7 @@
 @import "../utils/mixins";
 
+// Homepage header //
+
 .header {
     &__logo {
         display: flex;
@@ -26,6 +28,8 @@
         margin-right: 17px;
     }
 }
+
+// Location bar //
 
 .info {
     display: flex;

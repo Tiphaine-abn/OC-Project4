@@ -1,5 +1,7 @@
 @import "../utils/variables";
 
+// Text Fonts and global titles //
+
 $font-title: 'Shrikhand';
 
 * {
@@ -29,11 +31,15 @@ h3 {
     font-size: 16px;
 }
 
+// Menu pages restaurant titles //
+
 .restaurant__titles {
     font-family: 'Shrikhand';
     font-size: 28px;
     margin-right: 20px;
 }
+
+// Capital title of dishes //
 
 .uppercase-heading {
     text-transform: uppercase;

@@ -1,6 +1,27 @@
 @import "../utils/variables";
 @import "../utils/mixins";
 
+// Homepage container //
+
+.container {
+    max-width: $large-desktop;
+    margin: auto;
+
+    @media (min-width: $tablette) {
+        max-width: 718px;
+    }
+
+    @media (min-width: $desktop) {
+        max-width: 850px;
+    }
+
+    @media (min-width: $large-desktop) {
+        max-width: 1200px;
+    }
+}
+
+// Functionality //
+
 .functioning {
     padding: 50px 20px 40px 20px;
     margin: auto;
@@ -54,22 +75,5 @@
         font-size: 20px;
         margin: 0 20px;
         transition: color 0.3s ease;
-    }
-}
-
-.container {
-    max-width: $large-desktop;
-    margin: auto;
-
-    @media (min-width: $tablette) {
-        max-width: 718px;
-    }
-
-    @media (min-width: $desktop) {
-        max-width: 850px;
-    }
-
-    @media (min-width: $large-desktop) {
-        max-width: 1200px;
     }
 }

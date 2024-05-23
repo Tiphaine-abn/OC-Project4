@@ -1,5 +1,23 @@
 @import "../utils/variables";
 
+// Menu pages container //
+
+.restaurant__container {
+    @media (min-width: $tablette) {
+        max-width: 600px;
+    }
+
+    @media (min-width: $desktop) {
+        max-width: 850px;
+    }
+
+    @media (min-width: $large-desktop) {
+        max-width: 1200px;
+    }
+}
+
+// Menu pages header //
+
 .header {
     &__arrow {
         position: absolute;
@@ -14,6 +32,8 @@
         object-fit: cover;
     }
 }
+
+// Menu list //
 
 .restaurant__menu {
     border-radius: 40px 40px 0 0;
@@ -33,19 +53,5 @@
             display: flex;
             justify-content: center;
         }
-    }
-}
-
-.restaurant__container {
-    @media (min-width: $tablette) {
-        max-width: 600px;
-    }
-
-    @media (min-width: $desktop) {
-        max-width: 850px;
-    }
-
-    @media (min-width: $large-desktop) {
-        max-width: 1200px;
     }
 }

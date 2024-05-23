@@ -1,5 +1,7 @@
 @import "../utils/mixins";
 
+// Header button //
+
 .btn {
     padding: 15.5px 22px;
     font-size: 16px;
@@ -17,6 +19,8 @@
     }
 }
 
+// Menu button //
+
 .btn__menu {
     padding: 15px 48.5px;
     margin: 0 auto;
@@ -27,6 +31,8 @@
     cursor: pointer;
     @include shadow-btn;
 }
+
+// Heart button //
 
 .btn__heart {
     font-size: 25px;

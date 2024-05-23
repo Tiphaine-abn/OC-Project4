@@ -1,13 +1,4 @@
-@keyframes slide-left {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-100px);
-    }
-}
-
+// Animation loader //
 @keyframes loader {
     0% {
         visibility: visible;
@@ -38,5 +29,28 @@
         transform: rotate(360deg);
         opacity: 0;
         visibility: hidden;
+    }
+}
+
+// Animation menus pages //
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-left {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100px);
     }
 }

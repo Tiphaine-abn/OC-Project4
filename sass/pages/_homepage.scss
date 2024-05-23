@@ -3,21 +3,14 @@
 
 // Homepage container //
 
+.restaurant {
+    background-color: #F6F6F6;
+    padding: 50px 15px;
+}
+
 .container {
     max-width: $large-desktop;
     margin: auto;
-
-    @media (min-width: $tablette) {
-        max-width: 718px;
-    }
-
-    @media (min-width: $desktop) {
-        max-width: 850px;
-    }
-
-    @media (min-width: $large-desktop) {
-        max-width: 1200px;
-    }
 }
 
 // Functionality //
@@ -25,7 +18,6 @@
 .functioning {
     padding: 50px 20px 40px 20px;
     margin: auto;
-    max-width: 1200px;
 
     &__steps {
         display: flex;

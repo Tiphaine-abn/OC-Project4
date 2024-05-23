@@ -14,6 +14,7 @@
         }
     }
 
+    // Location bar //
     &__location {
         display: flex;
         justify-content: center;
@@ -22,6 +23,10 @@
         height: 50px;
         font-weight: bold;
         @include shadow-location;
+
+        @media (min-width: $tablette) {
+            box-shadow: none;
+        }
     }
 
     i {
@@ -29,7 +34,7 @@
     }
 }
 
-// Location bar //
+// Info bar //
 
 .info {
     display: flex;
@@ -43,5 +48,9 @@
         font-size: 18px;
         color: #353535;
         margin-bottom: 40px;
+    }
+
+    @media (min-width: $tablette) {
+        box-shadow: none;
     }
 }

@@ -3,14 +3,6 @@
 // Homepage cards //
 
 .restaurant {
-    background-color: #F6F6F6;
-    padding: 50px 15px;
-
-    &__container {
-        max-width: 1200px;
-        margin: auto;
-    }
-
     &__cards {
         display: flex;
         flex-direction: column;

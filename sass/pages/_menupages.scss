@@ -3,17 +3,8 @@
 // Menu pages container //
 
 .restaurant__container {
-    @media (min-width: $tablette) {
-        max-width: 600px;
-    }
-
-    @media (min-width: $desktop) {
-        max-width: 850px;
-    }
-
-    @media (min-width: $large-desktop) {
-        max-width: 1200px;
-    }
+    max-width: 1200px;
+    margin: auto;
 }
 
 // Menu pages header //

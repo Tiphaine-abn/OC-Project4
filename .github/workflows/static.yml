@@ -40,6 +40,14 @@ jobs:
             sass/main.scss
           destination: |
             /tmp/OC-Project4/css/main.css
+      - name: Compile main-expanded.css from main.scss
+        uses: gha-utilities/sass-build@v0.6.0
+        with:
+          source: |
+            sass/main.scss
+          destination: |
+            /tmp/OC-Project4/css/main-expanded.css
+          outputStyle: expanded
       - name: Move compiled CSS to path within pr-pages branch
         run: mv /tmp/OC-Project4/css/*.css css/
       - name: Setup Pages

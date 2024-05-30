@@ -1,1 +1,582 @@
-*{margin:0;padding:0}*{font-family:"Roboto",sans-serif;color:#000;text-decoration:none}@media(min-width: 1023.9px){.info__title{font-size:30px}}h1{font-size:24px;font-weight:bold;padding:50px 0 20px 0}h2{font-size:18px;margin:0px}h3{font-size:16px}.restaurant__titles{font-family:"Shrikhand";font-size:28px;margin-right:20px}.uppercase-heading{text-transform:uppercase;font-weight:300;position:relative;margin-top:40px;margin-bottom:20px}.uppercase-heading::after{content:"";width:40px;height:3px;background-color:#99e2d0;position:absolute;left:0;top:24px}.btn{padding:15.5px 22px;font-size:16px;border-radius:50px;color:#f3f3f3;background-color:rgba(0,0,0,0);border:rgba(0,0,0,0) 0px solid;transition:background-color .3s ease,box-shadow .3s ease;background-image:linear-gradient(to top, #9356DC, #FF79DA);box-shadow:rgba(0,0,0,.25) 0px 5px 10px 0px}.btn:hover{opacity:.9;box-shadow:rgba(0,0,0,.35) 0px 8px 15px 0px}.btn__menu{padding:15px 48.5px;margin:0 auto;margin-top:40px;display:flex;justify-content:center;align-items:center;cursor:pointer;box-shadow:rgba(0,0,0,.25) 0px 5px 10px 0px}.btn__heart{font-size:25px;display:flex;position:relative;justify-content:flex-end;align-items:center}.btn__heart-solid{opacity:0;transition-property:all;transition-duration:.5s;position:absolute}.btn__heart-solid:hover{opacity:1;color:#9356dc;background-clip:text;color:rgba(0,0,0,0);background-image:linear-gradient(to top, #9356DC, #FF79DA)}.restaurant{background-color:#f6f6f6;padding:0 20px}.restaurant__cards{display:flex;flex-direction:column}@media(min-width: 767.9px){.restaurant__cards{flex-direction:row;flex-wrap:wrap;justify-content:space-between}}.restaurant__card{background-color:#fff;width:100%;border-radius:20px;position:relative;margin-bottom:40px}@media(min-width: 1023.9px){.restaurant__card{width:46%}}.restaurant img{display:flex;width:100%;height:231px;object-fit:cover;border-radius:15px 15px 0 0}.restaurant__card--badge{display:flex;align-items:center;position:absolute;top:10px;right:10px;z-index:1;background:#99e2d0;color:#008766;border-radius:3px;padding:6px 12px}.card__content{display:flex;align-items:center;justify-content:space-between;padding:20px 25px 20px 15px}.card__content__txt{flex:1 0 auto}.cards__menu{display:flex;justify-content:space-between;background-color:#fff;border-radius:15px;margin-bottom:14px;position:relative;opacity:0;animation:fadeIn .5s ease forwards;box-shadow:2px 2px 10px #d3d3d3}.cards__menu h2{margin:0 0 4px;margin-right:20px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.cards__menu:hover .cards__animation{width:59px;animation:slide-left}.cards__menu:nth-of-type(1){animation-delay:.2s}.cards__menu:nth-of-type(2){animation-delay:.4s}.cards__menu:nth-of-type(3){animation-delay:.6s}.cards__menu:nth-of-type(4){animation-delay:.8s}.cards__menu:nth-of-type(5){animation-delay:1s}.cards__menu:nth-of-type(6){animation-delay:1.2s}.cards__menu:nth-of-type(7){animation-delay:1.4s}.cards__menu:nth-of-type(8){animation-delay:1.6s}.cards__menu:nth-of-type(9){animation-delay:1.8s}.cards__text{overflow:hidden;font-size:15px;padding:12px 12px 12px 10px;width:calc(100% - 59px)}.cards__subtitle{margin-right:20px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.cards__price{font-weight:bold;display:flex;align-items:flex-end;padding:0 10px 10px 0}.cards__animation{display:flex;justify-content:center;align-items:center;background-color:#99e2d0;width:0;overflow:hidden;height:69px;border-radius:0 15px 15px 0;transition:width .5s ease-out}.cards__animation i{font-size:20px;color:#fff}.loader{background:#eaeaea;position:fixed;inset:0;z-index:2;animation:loader 2s linear;visibility:hidden}.loader__animation{display:flex;justify-content:center;align-items:center;border:10px solid rgba(0,0,0,0);border-top:10px solid #9356dc;border-bottom:10px solid #ff79da;border-radius:50%;width:100px;height:100px;margin:auto;position:fixed;inset:0;animation:loader-border 2s linear}.loader__animation i{color:#353535;font-size:40px}.header__logo{display:flex;justify-content:center;align-items:center;margin:15px}.header__logo img{height:30px}.header__location{display:flex;justify-content:center;align-items:center;background-color:#eaeaea;height:50px;font-weight:bold;box-shadow:0px -1px 4px rgba(0,0,0,.35)}@media(min-width: 767.9px){.header__location{box-shadow:none}}.header i{margin-right:17px}.info{display:flex;flex-direction:column;text-align:center;padding:20px 20px 70px;background-color:#f6f6f6;box-shadow:0px -1px 4px rgba(0,0,0,.35)}.info__subtitle{font-size:18px;color:#353535;margin-bottom:40px}@media(min-width: 767.9px){.info{box-shadow:none}}.footer{background-color:#353535;padding:30px 25px 30px 25px}.footer i,.footer p{color:#fff;margin-right:10px}.footer i{width:19px;margin-right:8px}.footer img{filter:invert(1);width:120px;height:auto;padding:0 0 25px}.footer a{display:flex;align-items:center;margin-bottom:10px}@media(min-width: 1023.9px){.footer{display:flex;flex-direction:row-reverse;padding:70px 80px 30px 25px}.footer img{padding:0;margin-left:80px}.footer .footer__content{display:flex}.footer .footer__link{display:flex;margin-left:40px}}.container{max-width:1439.9px;margin:auto}.functioning{padding:0 20px}.functioning__steps{display:flex;flex-direction:column;justify-content:space-between;padding:15px 10px 50px 10px}@media(min-width: 1023.9px){.functioning__steps{flex-direction:row}}.functioning__step{background-color:#f6f6f6;border-radius:20px;padding:25px 25px;display:flex;align-items:center;margin-bottom:20px;font-weight:bold;position:relative;cursor:pointer;box-shadow:2px 2px 10px #d3d3d3}.functioning__step:hover i{color:#9356dc}@media(min-width: 1023.9px){.functioning__step{width:100%;margin:0 0 0 32px}}.functioning__number{background-color:#9356dc;color:#fff;padding:4px 9px;border-radius:50px;font-size:14px;position:absolute;left:-12px}.functioning i{color:#7e7e7e;font-size:20px;margin:0 20px;transition:color .3s ease}.restaurant__container{max-width:1200px;margin:auto}.header__arrow{position:absolute;color:#353535;font-size:18px;left:25px}.header__banner{width:100%;height:383px;object-fit:cover}.restaurant__menu{border-radius:40px 40px 0 0;background-color:#f6f6f6;position:relative;margin-top:-40px;padding:40px 15px}@media(min-width: 1023.9px){.restaurant__menu{padding:50px 193px}}.restaurant__menu--content{padding-right:30px;margin-bottom:30px;display:flex;justify-content:space-between}@media(min-width: 1023.9px){.restaurant__menu--content{display:flex;justify-content:center}}@keyframes loader{0%{visibility:visible;opacity:.9}70%{opacity:.9}100%{opacity:0;visibility:hidden}}@keyframes loader-border{0%{visibility:visible;opacity:1}70%{opacity:1}100%{transform:rotate(360deg);opacity:0;visibility:hidden}}@keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}@keyframes slide-left{0%{transform:translateX(0)}100%{transform:translateX(-100px)}}/*# sourceMappingURL=main.css.map */
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  text-decoration: none;
+}
+
+@media (min-width: 1023.9px) {
+  .info__title {
+    font-size: 30px;
+  }
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 50px 0 20px 0;
+}
+
+h2 {
+  font-size: 18px;
+  margin: 0px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+.restaurant__titles {
+  font-family: "Shrikhand";
+  font-size: 28px;
+  margin-right: 20px;
+}
+
+.uppercase-heading {
+  text-transform: uppercase;
+  font-weight: 300;
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.uppercase-heading::after {
+  content: "";
+  width: 40px;
+  height: 3px;
+  background-color: #99E2D0;
+  position: absolute;
+  left: 0;
+  top: 24px;
+}
+
+/*définit une ombre portée avec un décalage vertical vers le haut (-1px) et une propagation floue de 4 pixels, avec une opacité de 35%.*/
+/*définit une ombre portée avec une propagation floue de 10 pixels, un décalage vertical de 5 pixels vers le bas et aucun décalage horizontal, avec une opacité de 25%.*/
+/*définit une ombre portée pour un bouton lorsqu'il est survolé. Il a une propagation floue de 15 pixels, un décalage vertical de 8 pixels vers le bas et aucun décalage horizontal, avec une opacité de 35%.*/
+/*définit une ombre portée simple avec un décalage horizontal et vertical de 2 pixels, une propagation floue de 10 pixels, et une couleur*/
+/*définit un arrière-plan avec un dégradé linéaire, allant du haut vers le bas.*/
+/*utilisé pour couper le texte et ajouter des points de suspension (...) s'il dépasse la largeur du conteneur.*/
+.btn {
+  padding: 15.5px 22px;
+  font-size: 16px;
+  border-radius: 50px;
+  color: #F3F3F3;
+  background-color: transparent;
+  border: transparent 0px solid;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  /*Ajoute une transition de 0.3 secondes pour le changement de couleur de fond et l'ombre portée avec une interpolation douce (ease).*/
+  background-image: linear-gradient(to top, #9356DC, #FF79DA);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 10px 0px;
+}
+.btn:hover {
+  opacity: 0.9;
+  /*Réduit légèrement l'opacité du bouton lors du survol.*/
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 8px 15px 0px;
+}
+
+.btn__menu {
+  padding: 15px 48.5px;
+  margin: 0 auto;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 10px 0px;
+}
+
+.btn__heart {
+  font-size: 25px;
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.btn__heart-solid {
+  opacity: 0;
+  transition-property: all;
+  /*Définit la transition pour toutes les propriétés modifiables.*/
+  transition-duration: 0.5s;
+  position: absolute;
+}
+
+.btn__heart-solid:hover {
+  opacity: 1;
+  /* Rend l'élément visible lors du survol.*/
+  color: #9356DC;
+  background-clip: text;
+  /*Découpe le fond en fonction du texte.*/
+  color: transparent;
+  background-image: linear-gradient(to top, #9356DC, #FF79DA);
+}
+
+.restaurant {
+  background-color: #F6F6F6;
+  padding: 0 20px;
+  /*Définit un conteneur pour les cartes des restaurants. 
+  En dessous de la taille d'une tablette, les cartes sont affichées en colonne. 
+  Au-dessus de la taille d'une tablette, les cartes sont affichées en ligne avec un espacement égal entre elles.*/
+  /*Définit le style des cartes individuelles des restaurants.
+  Définit la couleur de fond, le rayon des coins, et une marge en bas pour l'espacement.
+  Pour les écrans tablette et plus grands, les cartes occupent 50% de la largeur moins 10 pixels pour l'espacement entre les cartes.*/
+  /*Définit le style des images à l'intérieur des cartes.
+  Les images sont étirées pour remplir leur conteneur tout en conservant leurs proportions, et elles sont coupées pour s'ajuster au cadre de l'image.
+  Les coins supérieurs de l'image ont un rayon de 15 pixels pour correspondre au rayon des coins de la carte.*/
+  /*Définit le style des badges dans les cartes des restaurants, positionnés en haut à droite de la carte.*/
+}
+.restaurant__cards {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 767.9px) {
+  .restaurant__cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+.restaurant__card {
+  background-color: #FFFFFF;
+  width: 100%;
+  border-radius: 20px;
+  position: relative;
+  margin-bottom: 40px;
+}
+@media (min-width: 1023.9px) {
+  .restaurant__card {
+    width: 46%;
+  }
+}
+.restaurant img {
+  display: flex;
+  width: 100%;
+  height: 231px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+.restaurant__card--badge {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+  background: #99E2D0;
+  color: #008766;
+  border-radius: 3px;
+  padding: 6px 12px;
+}
+
+.card__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 25px 20px 15px;
+}
+.card__content__txt {
+  flex: 1 0 auto;
+  /*cet élément va prendre autant d'espace disponible que possible sur l'axe principal, mais ne se rétrécira pas en dessous de sa taille minimale inhérente.*/
+}
+
+.cards__menu {
+  display: flex;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  margin-bottom: 14px;
+  position: relative;
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards;
+  /*Applique une animation de fondu entrant pour rendre les cartes visibles progressivement. La durée de l'animation est de 0,5 seconde, elle utilise une fonction d'accélération (ease) et l'animation avance jusqu'à la fin de la séquence.*/
+  box-shadow: 2px 2px 10px #d3d3d3;
+  /*Définit le style des cartes sur les pages de menu.
+  Les cartes sont affichées en ligne avec un espacement égal entre elles. Elles ont une couleur de fond, un rayon de coin et une marge en bas.
+  Les cartes ont une opacité de 0 par défaut et une animation de fondu entrant est appliquée pour les rendre visibles.*/
+  /*Style spécifique pour les titres de chaque carte.*/
+  /*Applique des retards à l'animation de fondu pour chaque carte en fonction de son index de position dans le groupe.*/
+}
+.cards__menu h2 {
+  margin: 0 0 4px;
+  margin-right: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cards__menu:hover .cards__animation {
+  width: 59px;
+  animation: slide-left;
+}
+.cards__menu:nth-of-type(1) {
+  animation-delay: 0.2s;
+}
+.cards__menu:nth-of-type(2) {
+  animation-delay: 0.4s;
+}
+.cards__menu:nth-of-type(3) {
+  animation-delay: 0.6s;
+}
+.cards__menu:nth-of-type(4) {
+  animation-delay: 0.8s;
+}
+.cards__menu:nth-of-type(5) {
+  animation-delay: 1s;
+}
+.cards__menu:nth-of-type(6) {
+  animation-delay: 1.2s;
+}
+.cards__menu:nth-of-type(7) {
+  animation-delay: 1.4s;
+}
+.cards__menu:nth-of-type(8) {
+  animation-delay: 1.6s;
+}
+.cards__menu:nth-of-type(9) {
+  animation-delay: 1.8s;
+}
+
+/*Styles spécifiques pour les différents éléments à l'intérieur des cartes*/
+.cards__text {
+  overflow: hidden;
+  font-size: 15px;
+  padding: 12px 12px 12px 10px;
+  width: calc(100% - 59px);
+}
+
+.cards__subtitle {
+  margin-right: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cards__price {
+  font-weight: bold;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 10px 10px 0;
+}
+
+.cards__animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  width: 0;
+  overflow: hidden;
+  height: 69px;
+  border-radius: 0 15px 15px 0;
+  transition: width 0.5s ease-out;
+}
+.cards__animation i {
+  font-size: 20px;
+  color: white;
+}
+
+/*Définit le style des animations dans les cartes du menu.
+Les animations sont affichées en ligne, centrées horizontalement et verticalement. Elles ont une couleur de fond spécifique définie par une variable.
+Initialement, la largeur est définie à 0 et elle augmente progressivement grâce à une transition lors du survol de la carte.
+Les éléments enfants ont une taille et une couleur de texte spécifiques.*/
+.loader {
+  background: #EAEAEA;
+  position: fixed;
+  /*Positionne l'élément de manière fixe par rapport à la fenêtre du navigateur, ce qui le rend toujours visible même lors du défilement.*/
+  inset: 0;
+  /*Applique top: 0; right: 0; bottom: 0; left: 0; pour étendre l'élément sur toute la fenêtre.*/
+  z-index: 2;
+  /*Définit l'ordre de superposition de l'élément. Un z-index de 2 signifie qu'il se trouvera au-dessus des éléments avec un z-index inférieur.*/
+  animation: loader 2s linear;
+  /*Applique une animation d'une durée de 2 secondes avec une progression linéaire.*/
+  visibility: hidden;
+  /*Cache l'élément par défaut.*/
+}
+.loader__animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 10px solid transparent;
+  border-top: 10px solid #9356DC;
+  border-bottom: 10px solid #FF79DA;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  position: fixed;
+  inset: 0;
+  animation: loader-border 2s linear;
+}
+.loader__animation i {
+  color: #353535;
+  font-size: 40px;
+}
+
+/*définit une ombre portée avec un décalage vertical vers le haut (-1px) et une propagation floue de 4 pixels, avec une opacité de 35%.*/
+/*définit une ombre portée avec une propagation floue de 10 pixels, un décalage vertical de 5 pixels vers le bas et aucun décalage horizontal, avec une opacité de 25%.*/
+/*définit une ombre portée pour un bouton lorsqu'il est survolé. Il a une propagation floue de 15 pixels, un décalage vertical de 8 pixels vers le bas et aucun décalage horizontal, avec une opacité de 35%.*/
+/*définit une ombre portée simple avec un décalage horizontal et vertical de 2 pixels, une propagation floue de 10 pixels, et une couleur*/
+/*définit un arrière-plan avec un dégradé linéaire, allant du haut vers le bas.*/
+/*utilisé pour couper le texte et ajouter des points de suspension (...) s'il dépasse la largeur du conteneur.*/
+.header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+.header__logo img {
+  height: 30px;
+}
+.header__location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EAEAEA;
+  height: 50px;
+  font-weight: bold;
+  box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.35);
+}
+@media (min-width: 767.9px) {
+  .header__location {
+    box-shadow: none;
+  }
+}
+.header i {
+  margin-right: 17px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px 20px 70px;
+  background-color: #F6F6F6;
+  box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.35);
+}
+.info__subtitle {
+  font-size: 18px;
+  color: #353535;
+  margin-bottom: 40px;
+}
+@media (min-width: 767.9px) {
+  .info {
+    box-shadow: none;
+  }
+}
+
+.footer {
+  background-color: #353535;
+  padding: 30px 25px 30px 25px;
+}
+.footer i,
+.footer p {
+  color: white;
+  margin-right: 10px;
+}
+.footer i {
+  width: 19px;
+  margin-right: 8px;
+}
+.footer img {
+  filter: invert(1);
+  width: 120px;
+  height: auto;
+  padding: 0 0 25px;
+}
+.footer a {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+@media (min-width: 1023.9px) {
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 70px 80px 30px 25px;
+  }
+  .footer img {
+    padding: 0;
+    margin-left: 80px;
+  }
+  .footer .footer__content {
+    display: flex;
+  }
+  .footer .footer__link {
+    display: flex;
+    margin-left: 40px;
+  }
+}
+
+/*définit une ombre portée avec un décalage vertical vers le haut (-1px) et une propagation floue de 4 pixels, avec une opacité de 35%.*/
+/*définit une ombre portée avec une propagation floue de 10 pixels, un décalage vertical de 5 pixels vers le bas et aucun décalage horizontal, avec une opacité de 25%.*/
+/*définit une ombre portée pour un bouton lorsqu'il est survolé. Il a une propagation floue de 15 pixels, un décalage vertical de 8 pixels vers le bas et aucun décalage horizontal, avec une opacité de 35%.*/
+/*définit une ombre portée simple avec un décalage horizontal et vertical de 2 pixels, une propagation floue de 10 pixels, et une couleur*/
+/*définit un arrière-plan avec un dégradé linéaire, allant du haut vers le bas.*/
+/*utilisé pour couper le texte et ajouter des points de suspension (...) s'il dépasse la largeur du conteneur.*/
+.container {
+  max-width: 1439.9px;
+  margin: auto;
+}
+
+.functioning {
+  padding: 0 20px;
+}
+.functioning__steps {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px 10px 50px 10px;
+}
+@media (min-width: 1023.9px) {
+  .functioning__steps {
+    flex-direction: row;
+  }
+}
+.functioning__step {
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  padding: 25px 25px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px #d3d3d3;
+}
+.functioning__step:hover i {
+  color: #9356DC;
+}
+@media (min-width: 1023.9px) {
+  .functioning__step {
+    width: 100%;
+    margin: 0 0 0 32px;
+  }
+}
+.functioning__number {
+  background-color: #9356DC;
+  color: #FFFFFF;
+  padding: 4px 9px;
+  border-radius: 50px;
+  font-size: 14px;
+  position: absolute;
+  left: -12px;
+}
+.functioning i {
+  color: #7E7E7E;
+  font-size: 20px;
+  margin: 0 20px;
+  transition: color 0.3s ease;
+}
+
+.restaurant__container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.header__arrow {
+  position: absolute;
+  color: #353535;
+  font-size: 18px;
+  left: 25px;
+}
+.header__banner {
+  width: 100%;
+  height: 383px;
+  object-fit: cover;
+}
+
+.restaurant__menu {
+  border-radius: 40px 40px 0 0;
+  background-color: #f6f6f6;
+  position: relative;
+  margin-top: -40px;
+  padding: 40px 15px;
+}
+@media (min-width: 1023.9px) {
+  .restaurant__menu {
+    padding: 50px 193px;
+  }
+}
+.restaurant__menu--content {
+  padding-right: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 1023.9px) {
+  .restaurant__menu--content {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/*définit une ombre portée avec un décalage vertical vers le haut (-1px) et une propagation floue de 4 pixels, avec une opacité de 35%.*/
+/*définit une ombre portée avec une propagation floue de 10 pixels, un décalage vertical de 5 pixels vers le bas et aucun décalage horizontal, avec une opacité de 25%.*/
+/*définit une ombre portée pour un bouton lorsqu'il est survolé. Il a une propagation floue de 15 pixels, un décalage vertical de 8 pixels vers le bas et aucun décalage horizontal, avec une opacité de 35%.*/
+/*définit une ombre portée simple avec un décalage horizontal et vertical de 2 pixels, une propagation floue de 10 pixels, et une couleur*/
+/*définit un arrière-plan avec un dégradé linéaire, allant du haut vers le bas.*/
+/*utilisé pour couper le texte et ajouter des points de suspension (...) s'il dépasse la largeur du conteneur.*/
+/*Cette animation rend l'élément visible, maintient son opacité pendant la majeure partie de l'animation, puis le fait disparaître.*/
+@keyframes loader {
+  0% {
+    visibility: visible;
+    opacity: 0.9;
+  }
+  70% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  /*Au début de l'animation, l'élément est visible avec une opacité de 0.9.*/
+  /*À 70% de la durée de l'animation, l'opacité reste à 0.9.*/
+  /*À la fin de l'animation, l'opacité diminue à 0 et l'élément devient invisible.*/
+}
+/*Cette animation fait tourner l'élément sur lui-même tout en le rendant invisible à la fin.*/
+@keyframes loader-border {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+    visibility: hidden;
+  }
+  /*Au début, l'élément est visible avec une opacité de 1.*/
+  /*À 70% de l'animation, l'opacité reste à 1.*/
+  /*À la fin, l'élément a effectué une rotation complète de 360 degrés, l'opacité passe à 0, et il devient invisible.*/
+}
+/*Cette animation crée un effet de fondu entrant avec un léger déplacement vers le bas.*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  /*Au début de l'animation, l'opacité est de 0 et l'élément est décalé de 10 pixels vers le bas (translation Y).*/
+  /*À la fin de l'animation, l'opacité est de 1 et l'élément revient à sa position initiale (sans translation Y).*/
+}
+/*Déplace un élément vers la gauche.*/
+@keyframes slide-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100px);
+  }
+  /*Au début, l'élément est à sa position initiale (pas de translation X).*/
+  /*À la fin, l'élément est déplacé de 100 pixels vers la gauche (translation X négative).*/
+}
+
+/*# sourceMappingURL=main.css.map */

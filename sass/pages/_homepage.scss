@@ -3,11 +3,6 @@
 
 // Homepage container //
 
-.restaurant {
-    background-color: #F6F6F6;
-    padding: 50px 15px;
-}
-
 .container {
     max-width: $large-desktop;
     margin: auto;
@@ -16,16 +11,15 @@
 // Functionality //
 
 .functioning {
-    padding: 50px 20px 40px 20px;
-    margin: auto;
+    padding: 0 20px;
 
     &__steps {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 15px 10px 20px 10px;
+        padding: 15px 10px 50px 10px;
 
-        @media (min-width: $tablette) {
+        @media (min-width: $desktop) {
             flex-direction: row;
         }
     }
@@ -46,7 +40,7 @@
             color: #9356DC;
         }
 
-        @media (min-width: $tablette) {
+        @media (min-width: $desktop) {
             width: 100%;
             margin: 0 0 0 32px;
         }

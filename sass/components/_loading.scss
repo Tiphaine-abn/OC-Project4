@@ -2,10 +2,15 @@
 .loader {
     background: $color-grey;
     position: fixed;
+    /*Positionne l'élément de manière fixe par rapport à la fenêtre du navigateur, ce qui le rend toujours visible même lors du défilement.*/
     inset: 0;
+    /*Applique top: 0; right: 0; bottom: 0; left: 0; pour étendre l'élément sur toute la fenêtre.*/
     z-index: 2;
+    /*Définit l'ordre de superposition de l'élément. Un z-index de 2 signifie qu'il se trouvera au-dessus des éléments avec un z-index inférieur.*/
     animation: loader 2s linear;
+    /*Applique une animation d'une durée de 2 secondes avec une progression linéaire.*/
     visibility: hidden;
+    /*Cache l'élément par défaut.*/
 
     &__animation {
         display: flex;

@@ -1,4 +1,5 @@
 // Animation loader //
+/*Cette animation rend l'élément visible, maintient son opacité pendant la majeure partie de l'animation, puis le fait disparaître.*/
 @keyframes loader {
     0% {
         visibility: visible;
@@ -13,8 +14,13 @@
         opacity: 0;
         visibility: hidden;
     }
+
+    /*Au début de l'animation, l'élément est visible avec une opacité de 0.9.*/
+    /*À 70% de la durée de l'animation, l'opacité reste à 0.9.*/
+    /*À la fin de l'animation, l'opacité diminue à 0 et l'élément devient invisible.*/
 }
 
+/*Cette animation fait tourner l'élément sur lui-même tout en le rendant invisible à la fin.*/
 @keyframes loader-border {
     0% {
         visibility: visible;
@@ -30,9 +36,14 @@
         opacity: 0;
         visibility: hidden;
     }
+
+    /*Au début, l'élément est visible avec une opacité de 1.*/
+    /*À 70% de l'animation, l'opacité reste à 1.*/
+    /*À la fin, l'élément a effectué une rotation complète de 360 degrés, l'opacité passe à 0, et il devient invisible.*/
 }
 
 // Animation menus pages //
+/*Cette animation crée un effet de fondu entrant avec un léger déplacement vers le bas.*/
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -43,8 +54,12 @@
         opacity: 1;
         transform: translateY(0);
     }
+
+    /*Au début de l'animation, l'opacité est de 0 et l'élément est décalé de 10 pixels vers le bas (translation Y).*/
+    /*À la fin de l'animation, l'opacité est de 1 et l'élément revient à sa position initiale (sans translation Y).*/
 }
 
+/*Déplace un élément vers la gauche.*/
 @keyframes slide-left {
     0% {
         transform: translateX(0);
@@ -53,4 +68,7 @@
     100% {
         transform: translateX(-100px);
     }
+
+    /*Au début, l'élément est à sa position initiale (pas de translation X).*/
+    /*À la fin, l'élément est déplacé de 100 pixels vers la gauche (translation X négative).*/
 }

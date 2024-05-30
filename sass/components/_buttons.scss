@@ -10,11 +10,13 @@
     background-color: transparent;
     border: transparent 0px solid;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    /*Ajoute une transition de 0.3 secondes pour le changement de couleur de fond et l'ombre portée avec une interpolation douce (ease).*/
     @include gradient;
     @include shadow-btn;
 
     &:hover {
         opacity: 0.90;
+        /*Réduit légèrement l'opacité du bouton lors du survol.*/
         @include shadow-btn-hover;
     }
 }
@@ -45,14 +47,17 @@
 .btn__heart-solid {
     opacity: 0;
     transition-property: all;
+    /*Définit la transition pour toutes les propriétés modifiables.*/
     transition-duration: 0.5s;
     position: absolute;
 }
 
 .btn__heart-solid:hover {
     opacity: 1;
+    /* Rend l'élément visible lors du survol.*/
     color: $color-primary;
     background-clip: text;
+    /*Découpe le fond en fonction du texte.*/
     color: transparent;
     @include gradient;
 }

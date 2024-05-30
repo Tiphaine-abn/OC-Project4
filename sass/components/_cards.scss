@@ -3,6 +3,9 @@
 // Homepage cards //
 
 .restaurant {
+    background-color: #F6F6F6;
+    padding: 0 20px;
+
     &__cards {
         display: flex;
         flex-direction: column;
@@ -14,25 +17,37 @@
         }
     }
 
+    /*Définit un conteneur pour les cartes des restaurants. 
+    En dessous de la taille d'une tablette, les cartes sont affichées en colonne. 
+    Au-dessus de la taille d'une tablette, les cartes sont affichées en ligne avec un espacement égal entre elles.*/
+
     &__card {
         background-color: #FFFFFF;
+        width: 100%;
         border-radius: 20px;
-        margin-bottom: 30px;
         position: relative;
+        margin-bottom: 40px;
 
-        @media (min-width: $tablette) {
-            flex-basis: calc(50% - 10px);
-            margin-bottom: 50px;
+        @media (min-width: $desktop) {
+            width: 46%;
         }
     }
+
+    /*Définit le style des cartes individuelles des restaurants.
+    Définit la couleur de fond, le rayon des coins, et une marge en bas pour l'espacement.
+    Pour les écrans tablette et plus grands, les cartes occupent 50% de la largeur moins 10 pixels pour l'espacement entre les cartes.*/
 
     img {
         display: flex;
         width: 100%;
-        height: 180px;
+        height: 231px;
         object-fit: cover;
         border-radius: 15px 15px 0 0;
     }
+
+    /*Définit le style des images à l'intérieur des cartes.
+    Les images sont étirées pour remplir leur conteneur tout en conservant leurs proportions, et elles sont coupées pour s'ajuster au cadre de l'image.
+    Les coins supérieurs de l'image ont un rayon de 15 pixels pour correspondre au rayon des coins de la carte.*/
 
     &__card--badge {
         display: flex;
@@ -46,6 +61,8 @@
         border-radius: 3px;
         padding: 6px 12px;
     }
+
+    /*Définit le style des badges dans les cartes des restaurants, positionnés en haut à droite de la carte.*/
 }
 
 .card__content {
@@ -56,6 +73,7 @@
 
     &__txt {
         flex: 1 0 auto;
+        /*cet élément va prendre autant d'espace disponible que possible sur l'axe principal, mais ne se rétrécira pas en dessous de sa taille minimale inhérente.*/
     }
 }
 
@@ -70,14 +88,19 @@
     position: relative;
     opacity: 0;
     animation: fadeIn 0.5s ease forwards;
+    /*Applique une animation de fondu entrant pour rendre les cartes visibles progressivement. La durée de l'animation est de 0,5 seconde, elle utilise une fonction d'accélération (ease) et l'animation avance jusqu'à la fin de la séquence.*/
     @include shadow;
 
+    /*Définit le style des cartes sur les pages de menu.
+    Les cartes sont affichées en ligne avec un espacement égal entre elles. Elles ont une couleur de fond, un rayon de coin et une marge en bas.
+    Les cartes ont une opacité de 0 par défaut et une animation de fondu entrant est appliquée pour les rendre visibles.*/
+
+    /*Style spécifique pour les titres de chaque carte.*/
     h2 {
         margin: 0 0 4px;
         margin-right: 20px;
         white-space: nowrap;
         @include suspension-points;
-
     }
 
     /// Animation slide-left ///
@@ -87,6 +110,7 @@
     }
 
     /// Animation fadeIn ///
+    /*Applique des retards à l'animation de fondu pour chaque carte en fonction de son index de position dans le groupe.*/
     // Entrées //
     &:nth-of-type(1) {
         animation-delay: 0.2s;
@@ -127,6 +151,7 @@
     }
 }
 
+/*Styles spécifiques pour les différents éléments à l'intérieur des cartes*/
 .cards__text {
     overflow: hidden;
     font-size: 15px;
@@ -165,3 +190,8 @@
         color: white;
     }
 }
+
+/*Définit le style des animations dans les cartes du menu.
+Les animations sont affichées en ligne, centrées horizontalement et verticalement. Elles ont une couleur de fond spécifique définie par une variable.
+Initialement, la largeur est définie à 0 et elle augmente progressivement grâce à une transition lors du survol de la carte.
+Les éléments enfants ont une taille et une couleur de texte spécifiques.*/

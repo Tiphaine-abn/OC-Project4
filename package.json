@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build": "sass ./sass:./css -s compressed",
-    "watch": "sass --watch ./sass:./css -s compressed"
+    "build": "sass ./sass:./css",
+    "watch": "sass --watch ./sass:./css"
   },
   "packageManager": "yarn@4.2.2"
 }

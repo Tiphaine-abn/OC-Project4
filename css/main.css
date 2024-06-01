@@ -241,7 +241,6 @@ h3 {
 
 /*Styles spécifiques pour les différents éléments à l'intérieur des cartes*/
 .cards__text {
-  overflow: hidden;
   font-size: 15px;
   padding: 12px 12px 12px 10px;
   width: calc(100% - 59px);

@@ -394,10 +394,14 @@ Les éléments enfants ont une taille et une couleur de texte spécifiques.*/
     display: flex;
     flex-direction: row-reverse;
     padding: 70px 80px 30px 25px;
+    align-items: center;
   }
   .footer img {
     padding: 0;
     margin-left: 80px;
+  }
+  .footer a {
+    margin-bottom: 0px;
   }
   .footer .footer__content {
     display: flex;

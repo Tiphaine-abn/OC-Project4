@@ -3,8 +3,15 @@
 // Menu pages container //
 
 .restaurant__container {
-    max-width: 1200px;
     margin: auto;
+
+    @media (min-width: $desktop) {
+        max-width: 800px;
+    }
+
+    @media (min-width: $large-desktop) {
+        max-width: 1000px;
+    }
 }
 
 // Menu pages header //
@@ -34,6 +41,10 @@
     padding: 40px 15px;
 
     @media (min-width: $desktop) {
+        padding: 50px 150px;
+    }
+
+    @media (min-width: $large-desktop) {
         padding: 50px 193px;
     }
 

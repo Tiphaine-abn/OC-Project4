@@ -10,34 +10,46 @@
   text-decoration: none;
 }
 
+.info__title {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
 @media (min-width: 1023.9px) {
   .info__title {
     font-size: 30px;
   }
 }
 
-h1 {
+.info__subtitle {
+  font-size: 18px;
+  color: #353535;
+  margin-bottom: 40px;
+}
+
+.titles {
   font-size: 24px;
   font-weight: bold;
   padding: 50px 0 20px 0;
 }
 
-h2 {
+.subtitles {
   font-size: 18px;
   margin: 0px;
 }
 
-h3 {
+p {
   font-size: 16px;
 }
 
 .restaurant__titles {
   font-family: "Shrikhand";
+  font-weight: 400;
   font-size: 28px;
   margin-right: 20px;
 }
 
 .uppercase-heading {
+  font-size: 16px;
   text-transform: uppercase;
   font-weight: 300;
   position: relative;
@@ -193,15 +205,7 @@ h3 {
   /*Définit le style des cartes sur les pages de menu.
   Les cartes sont affichées en ligne avec un espacement égal entre elles. Elles ont une couleur de fond, un rayon de coin et une marge en bas.
   Les cartes ont une opacité de 0 par défaut et une animation de fondu entrant est appliquée pour les rendre visibles.*/
-  /*Style spécifique pour les titres de chaque carte.*/
   /*Applique des retards à l'animation de fondu pour chaque carte en fonction de son index de position dans le groupe.*/
-}
-.cards__menu h2 {
-  margin: 0 0 4px;
-  margin-right: 20px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 .cards__menu:hover .cards__animation {
   width: 59px;
@@ -237,14 +241,20 @@ h3 {
 
 /*Styles spécifiques pour les différents éléments à l'intérieur des cartes*/
 .cards__text {
-  font-size: 15px;
   padding: 12px 12px 12px 10px;
   width: calc(100% - 59px);
+  margin: 0 0 4px;
+  margin-right: 20px;
 }
-
-.cards__subtitle {
+.cards__text h3 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cards__text p {
   margin-right: 20px;
   white-space: nowrap;
+  font-size: 15.4px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -350,11 +360,6 @@ Les éléments enfants ont une taille et une couleur de texte spécifiques.*/
   background-color: #F6F6F6;
   box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.35);
 }
-.info__subtitle {
-  font-size: 18px;
-  color: #353535;
-  margin-bottom: 40px;
-}
 @media (min-width: 767.9px) {
   .info {
     box-shadow: none;
@@ -418,6 +423,16 @@ Les éléments enfants ont une taille et une couleur de texte spécifiques.*/
   max-width: 1439.9px;
   margin: auto;
 }
+@media (min-width: 1023.9px) {
+  .container {
+    max-width: 900px;
+  }
+}
+@media (min-width: 1439.9px) {
+  .container {
+    max-width: 1300px;
+  }
+}
 
 .functioning {
   padding: 0 20px;
@@ -431,6 +446,11 @@ Les éléments enfants ont une taille et une couleur de texte spécifiques.*/
 @media (min-width: 1023.9px) {
   .functioning__steps {
     flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 0px 50px 0px;
+  }
+  .functioning__steps .functioning__step:first-child {
+    margin-left: 12px;
   }
 }
 .functioning__step {
@@ -471,8 +491,17 @@ Les éléments enfants ont une taille et une couleur de texte spécifiques.*/
 }
 
 .restaurant__container {
-  max-width: 1200px;
   margin: auto;
+}
+@media (min-width: 1023.9px) {
+  .restaurant__container {
+    max-width: 800px;
+  }
+}
+@media (min-width: 1439.9px) {
+  .restaurant__container {
+    max-width: 1000px;
+  }
 }
 
 .header__arrow {
@@ -495,6 +524,11 @@ Les éléments enfants ont une taille et une couleur de texte spécifiques.*/
   padding: 40px 15px;
 }
 @media (min-width: 1023.9px) {
+  .restaurant__menu {
+    padding: 50px 150px;
+  }
+}
+@media (min-width: 1439.9px) {
   .restaurant__menu {
     padding: 50px 193px;
   }

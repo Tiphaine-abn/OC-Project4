@@ -6,6 +6,14 @@
 .container {
     max-width: $large-desktop;
     margin: auto;
+
+    @media (min-width: $desktop) {
+        max-width: 900px;
+    }
+
+    @media (min-width: $large-desktop) {
+        max-width: 1300px;
+    }
 }
 
 // Functionality //
@@ -21,6 +29,12 @@
 
         @media (min-width: $desktop) {
             flex-direction: row;
+            justify-content: space-between;
+            padding: 15px 0px 50px 0px;
+
+            .functioning__step:first-child {
+                margin-left: 12px;
+            }
         }
     }
 

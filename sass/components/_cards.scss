@@ -95,14 +95,6 @@
     Les cartes sont affichées en ligne avec un espacement égal entre elles. Elles ont une couleur de fond, un rayon de coin et une marge en bas.
     Les cartes ont une opacité de 0 par défaut et une animation de fondu entrant est appliquée pour les rendre visibles.*/
 
-    /*Style spécifique pour les titres de chaque carte.*/
-    h2 {
-        margin: 0 0 4px;
-        margin-right: 20px;
-        white-space: nowrap;
-        @include suspension-points;
-    }
-
     /// Animation slide-left ///
     &:hover .cards__animation {
         width: 59px;
@@ -153,15 +145,22 @@
 
 /*Styles spécifiques pour les différents éléments à l'intérieur des cartes*/
 .cards__text {
-    font-size: 15px;
     padding: 12px 12px 12px 10px;
     width: calc(100% - 59px);
-}
-
-.cards__subtitle {
+    margin: 0 0 4px;
     margin-right: 20px;
-    white-space: nowrap;
-    @include suspension-points;
+
+    h3 {
+        white-space: nowrap;
+        @include suspension-points;
+    }
+
+    p {
+        margin-right: 20px;
+        white-space: nowrap;
+        font-size: 15.4px;
+        @include suspension-points;
+    }
 }
 
 .cards__price {

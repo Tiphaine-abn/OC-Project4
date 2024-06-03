@@ -11,23 +11,33 @@ $font-title: 'Shrikhand';
 }
 
 .info__title {
+    font-size: 24px;
+    margin-bottom: 15px;
+
+
     @media (min-width: $desktop) {
         font-size: 30px;
     }
 }
 
-h1 {
+.info__subtitle {
+    font-size: 18px;
+    color: #353535;
+    margin-bottom: 40px;
+}
+
+.titles {
     font-size: 24px;
     font-weight: bold;
     padding: 50px 0 20px 0;
 }
 
-h2 {
+.subtitles {
     font-size: 18px;
     margin: 0px;
 }
 
-h3 {
+p {
     font-size: 16px;
 }
 
@@ -35,6 +45,7 @@ h3 {
 
 .restaurant__titles {
     font-family: 'Shrikhand';
+    font-weight: 400;
     font-size: 28px;
     margin-right: 20px;
 }
@@ -42,6 +53,7 @@ h3 {
 // Capital title of dishes //
 
 .uppercase-heading {
+    font-size: 16px;
     text-transform: uppercase;
     font-weight: 300;
     position: relative;

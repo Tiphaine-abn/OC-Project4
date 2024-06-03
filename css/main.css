@@ -99,19 +99,15 @@ h3 {
 
 .btn__heart-solid {
   opacity: 0;
-  transition-property: all;
-  /*Définit la transition pour toutes les propriétés modifiables.*/
-  transition-duration: 0.5s;
+  transition: opacity 0.5s;
   position: absolute;
+  color: transparent;
+  background-clip: text;
 }
 
 .btn__heart-solid:hover {
   opacity: 1;
   /* Rend l'élément visible lors du survol.*/
-  color: #9356DC;
-  background-clip: text;
-  /*Découpe le fond en fonction du texte.*/
-  color: transparent;
   background-image: linear-gradient(to top, #9356DC, #FF79DA);
 }
 

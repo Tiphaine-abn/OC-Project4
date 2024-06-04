@@ -6,5 +6,8 @@
     "build": "sass ./sass:./css",
     "watch": "sass --watch ./sass:./css"
   },
-  "packageManager": "yarn@4.2.2"
+  "packageManager": "yarn@4.2.2",
+  "devDependencies": {
+    "sass": "^1.77.4"
+  }
 }

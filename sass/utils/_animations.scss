@@ -72,3 +72,16 @@
     /*Au début, l'élément est à sa position initiale (pas de translation X).*/
     /*À la fin, l'élément est déplacé de 100 pixels vers la gauche (translation X négative).*/
 }
+
+@keyframes heartFadeInOut {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+    /*Au début de l'animation, l'opacité est de 0 et l'élément est décalé de 10 pixels vers le bas (translation Y).*/
+    /*À la fin de l'animation, l'opacité est de 1 et l'élément revient à sa position initiale (sans translation Y).*/
+}

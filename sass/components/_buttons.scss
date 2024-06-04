@@ -46,14 +46,13 @@
 
 .btn__heart-solid {
     opacity: 0;
-    transition: opacity 0.5s;
     position: absolute;
     color: transparent;
     background-clip: text;
+    transition: opacity 0.5s ease-in-out;
+    @include gradient;
 }
 
 .btn__heart-solid:hover {
     opacity: 1;
-    /* Rend l'élément visible lors du survol.*/
-    @include gradient;
 }
